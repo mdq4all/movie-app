@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #1877f2,
+                     0 0 10px #1459b3,
+                     0 0 10px #179bff;
+    }
+    to {
+        text-shadow: 0 0 10px #1877f2,
+                     0 0 10px #1459b3,
+                     0 0 10px #179bff;
+    }
+}
+.neon {
+     animation: glow 1s infinite alternate;
+}
+.list_movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 20px;
+}
+.background{
+    background: rgb(154,9,215);
+    background: linear-gradient(315deg, rgba(154,9,215,1) 4%, rgba(0,0,9,1) 56%);
+}
